@@ -1,0 +1,56 @@
+
+reZet80 to RC2014 bus adapter specs [last modified: 2021-06-03]
+---------------------------------------------------------------
+
+The adapter provides a simple one-to-one mapping of the bus signals with the
+exception of BUSACK, BUSREQ, HALT, NMI, RFSH and WAIT that are only available
+on the extended RC2014 bus. Together with INT these signals are available but
+optional (can be user-defined signals) on the reZet80 CPU bus.
+
+The RC2014 signals RX and TX are not available on the reZet80 CPU bus.
+The signals USER1, USER2, USER3 and USER4 correspond to the user-defined but
+optional reZet80 signals.
+
+This adapter can accomodate one reZet80 card or one RC2014 card and can
+further be connected to a reZet80 or an RC2014 backplane.
+
+reZet80 CPU bus pin 01: D7      : RC2014 bus pin 34
+reZet80 CPU bus pin 02: D6      : RC2014 bus pin 33
+reZet80 CPU bus pin 03: D5      : RC2014 bus pin 32
+reZet80 CPU bus pin 04: D4      : RC2014 bus pin 31
+reZet80 CPU bus pin 05: D3      : RC2014 bus pin 30
+reZet80 CPU bus pin 06: D2      : RC2014 bus pin 29
+reZet80 CPU bus pin 07: D1      : RC2014 bus pin 28
+reZet80 CPU bus pin 08: D0      : RC2014 bus pin 27
+reZet80 CPU bus pin 09: /IORQ   : RC2014 bus pin 26
+reZet80 CPU bus pin 10: /MREQ   : RC2014 bus pin 23
+reZet80 CPU bus pin 11: /HALT   : available only on extended RC2014 bus
+reZet80 CPU bus pin 12: /NMI    : available only on extended RC2014 bus
+reZet80 CPU bus pin 13: /INT    : RC2014 bus pin 22
+reZet80 CPU bus pin 14: /RD     : RC2014 bus pin 25
+reZet80 CPU bus pin 15: /WR     : RC2014 bus pin 24
+reZet80 CPU bus pin 16: /BUSACK : available only on extended RC2014 bus
+reZet80 CPU bus pin 17: /WAIT   : available only on extended RC2014 bus
+reZet80 CPU bus pin 18: /BUSREQ : available only on extended RC2014 bus
+reZet80 CPU bus pin 19: /RESET  : RC2014 bus pin 20
+reZet80 CPU bus pin 20: /M1     : RC2014 bus pin 19
+reZet80 CPU bus pin 21: /RFSH   : available only on extended RC2014 bus
+reZet80 CPU bus pin 22: CLK     : RC2014 bus pin 21
+reZet80 CPU bus pin 23: GND     : RC2014 bus pin 17
+reZet80 CPU bus pin 24: +5V     : RC2014 bus pin 18
+reZet80 CPU bus pin 25: A0      : RC2014 bus pin 16
+reZet80 CPU bus pin 26: A1      : RC2014 bus pin 15
+reZet80 CPU bus pin 27: A2      : RC2014 bus pin 14
+reZet80 CPU bus pin 28: A3      : RC2014 bus pin 13
+reZet80 CPU bus pin 29: A4      : RC2014 bus pin 12
+reZet80 CPU bus pin 30: A5      : RC2014 bus pin 11
+reZet80 CPU bus pin 31: A6      : RC2014 bus pin 10
+reZet80 CPU bus pin 32: A7      : RC2014 bus pin 09
+reZet80 CPU bus pin 33: A8      : RC2014 bus pin 08
+reZet80 CPU bus pin 34: A9      : RC2014 bus pin 07
+reZet80 CPU bus pin 35: A10     : RC2014 bus pin 06
+reZet80 CPU bus pin 36: A11     : RC2014 bus pin 05
+reZet80 CPU bus pin 37: A12     : RC2014 bus pin 04
+reZet80 CPU bus pin 38: A13     : RC2014 bus pin 03
+reZet80 CPU bus pin 39: A14     : RC2014 bus pin 02
+reZet80 CPU bus pin 40: A15     : RC2014 bus pin 01

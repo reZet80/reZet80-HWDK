@@ -1,0 +1,36 @@
+
+reZet80 HWDK README [last modified: 2021-06-03]
+--------------------------------------------------
+
+This README describes the reZet80 HWDK (hardware development kit).
+
+reZet80 stands for "Reset me back to the 80s with the Z80".
+
+The reZet80 HWDK provides all the parts needed to build your Z80-based
+hardware projects: 3 different power sockets, on/off switch, a simple reset
+switch, 2 bus slots and 1 expansion slot to further extend the system and
+a large wire-wrap area that can be used for your custom-designed circuits.
+Additionally, 38 data, address and control bus pins are located alongside
+the board to easily attach logic analyzer and oscilloscope probes.
+This is a pure hardware project.
+
+One of the bus slots has to be populated with a reZet80 CPU card R2.
+
+Only a 5 Volt power supply has to be connected to one of the 3 power sockets/
+connectors.
+
+Bill of materials:
+- 1x reZet80 HWDK R0 PCB
+- 2x 40-pin female sockets (CPU bus slots)
+- 1x 40-pin right-angled female socket (CPU bus expansion slot)
+- 1x 2-pin male connector (power supply)
+- 1x 8-pin male connector (CPU data bus)
+- 1x 14-pin male connector (CPU control bus)
+- 1x 16-pin male connector (CPU address bus)
+- 1x tactile push button switch (reset)
+- 1x on/off/on switch
+- 1x female DC power supply socket
+- 1x 2-pin screw connector (power supply)
+- 1x red LED
+- 1x resistor (choose according to LED specs)
+- 3x capacitor 100 nF
